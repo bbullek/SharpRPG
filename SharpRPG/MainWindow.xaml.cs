@@ -16,18 +16,23 @@ using Engine.Controllers;
 
 namespace SharpRPG
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    /// Interaction logic for MainWindow.xaml\
     public partial class MainWindow : Window
     {
         private GameSession _gameSession;
 
+        /// Constructor
         public MainWindow()
         {
             InitializeComponent();
             _gameSession = new GameSession();
             DataContext = _gameSession;
+        }
+
+        /// Event handler for "Add XP" button displayed in Player Data panel.
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            _gameSession.CurrentPlayer.ExperiencePoints += 10;
         }
     }
 }
