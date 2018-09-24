@@ -7,16 +7,20 @@ using Engine.Models;
 
 namespace Engine.Controllers
 {
-    class GameSession
+    public class GameSession
     {
-        Player CurrentPlayer { get; set; }
+        public Player CurrentPlayer { get; set; }
 
-        // Constructor
+        /// Constructor
         public GameSession()
         {
             CurrentPlayer = new Player();
             CurrentPlayer.Name = "Princess Carolyn";
+            CurrentPlayer.CharacterClass = "Fighter";
+            CurrentPlayer.HitPoints = 10;
             CurrentPlayer.Gold = 999999;
+            CurrentPlayer.ExperiencePoints = 0;
+            CurrentPlayer.Level = 1;
         }
     }
 }
