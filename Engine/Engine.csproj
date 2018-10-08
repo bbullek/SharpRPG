@@ -42,9 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\GameSession.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Locations\FarmFields.png" />
+    <Resource Include="Images\Locations\Farmhouse.png" />
+    <Resource Include="Images\Locations\HerbalistsGarden.png" />
+    <Resource Include="Images\Locations\HerbalistsHut.png" />
+    <Resource Include="Images\Locations\Home.png" />
+    <Resource Include="Images\Locations\SpiderForest.png" />
+    <Resource Include="Images\Locations\TownGate.png" />
+    <Resource Include="Images\Locations\TownSquare.png" />
+    <Resource Include="Images\Locations\Trader.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
